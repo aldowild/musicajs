@@ -35,54 +35,124 @@ function OcarinaDelTiempo(){
             NotaMusical(329.628,vprofundidad);
         }
         
+        p=new Promise(function(resolve,reject){
+            resolve();
+        });
 
-        setTimeout(function(){
-            btnLa(3);
-        } ,1800 );
+        p.then(()=>{
+            return new Promise(function(resolve,reject){
+            setTimeout(function(){
+                btnLa(3);
+                resolve();
+            } ,1800 )
+        })
+        }
+        ).then(()=>{
+            return new Promise(function(resolve,reject){
         setTimeout(function(){
             btnRe(4);
-        } ,2600 );
+            resolve();
+        } ,800 )
+    })
+    }
+        ).then(()=>{
+            return new Promise(function(resolve,reject){
         setTimeout(function(){
             btnFa(3);
-        } ,3500 );
+            resolve();
+        } ,900 )
+    })}
+    ).then(()=>{
+        return new Promise(function(resolve,reject){
         setTimeout(function(){
             btnLa(4);
-        } ,4000 );
+            resolve();
+        } ,500 )    
+    })}
+    ).then(()=>{
+        return new Promise(function(resolve,reject){
         setTimeout(function(){
             btnRe(3);
-        } ,4500 );
+            resolve();
+        } ,500 )
+    })}
+    ).then(()=>{
+        return new Promise(function(resolve,reject){
         setTimeout(function(){
             btnFa(2);
-        } ,5000 );
+            resolve();
+        } ,500 )
+    })}
+    ).then(()=>{
+        return new Promise(function(resolve,reject){
         setTimeout(function(){
             btnLa(2);
-        } ,5500 );
+            resolve();
+        } ,500 )
+    })}
+    ).then(()=>{
+        return new Promise(function(resolve,reject){
         setTimeout(function(){
             btnSi(2);
-        } ,6000 );
+            resolve();
+        } ,500 )
+    })}
+    ).then(()=>{
+        return new Promise(function(resolve,reject){
         setTimeout(function(){
             btnSol(4);
-        } ,6500 );
+            resolve();
+        } ,500 )
+    })}
+    ).then(()=>{
+        return new Promise(function(resolve,reject){
         setTimeout(function(){
             btnFa(3);
-        } ,7000 );
+            resolve();
+        } ,500 )
+    })}
+    ).then(()=>{
+        return new Promise(function(resolve,reject){
         setTimeout(function(){
             btnSol(1);
-        } ,7500 );
+            resolve();
+        } ,500 )
+    })}
+    ).then(()=>{
+        return new Promise(function(resolve,reject){
         setTimeout(function(){
             btnLa(2);
-        } ,8000 );
+            resolve();
+        } ,500 )
+    })}
+    ).then(()=>{
+        return new Promise(function(resolve,reject){
         setTimeout(function(){
             btnRe(1);
-        } ,8500 );
+            resolve();
+        } ,500 )
+    })}
+    ).then(()=>{
+        return new Promise(function(resolve,reject){
         setTimeout(function(){
             btnDo(1);
-        } ,9000 );
+            resolve();
+        } ,500 )
+    })}
+    ).then(()=>{
+        return new Promise(function(resolve,reject){
         setTimeout(function(){
             btnMi(1);
-        } ,9500 );
+            resolve();
+        } ,500 )
+    })}
+    ).then(()=>{
+        return new Promise(function(resolve,reject){
         setTimeout(function(){
             btnRe(1);
-        } ,10000 );
+            resolve();
+        } ,500 )
+    })}
+    )
 
     }
